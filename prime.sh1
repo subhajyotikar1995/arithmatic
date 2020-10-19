@@ -1,0 +1,17 @@
+#! /bin/bash
+count=0
+while (true)
+do
+ number=$((1000+ RANDOM% 9999))
+ count=$(( $count+1 ))
+ for ((i=2; i<=number/2; i++))
+ do
+  if [ $((number%i)) -eq 0 ]
+   then
+    echo "$FDP is not a prime number."
+     break
+  fi
+ done
+echo "$number is prime number"
+done
+
