@@ -14,7 +14,7 @@ do
 	elif [ $dice1 -lt 6 -a $dice2 -lt 6 ]
 	then
 		rolls=$(( $rolls + 1 ))
-		sum=$(( $sum + $dice1 + $dice2 ))
+		sum=$((  $dice1 + $dice2 ))
 	fi
 done
 
